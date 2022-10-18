@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Then VS Now</title>
+</head>
+<body>
+    <h1>Then VS Now</h1>
+    <form action="http://someserver.com/service.php" method="post" name="then">
+        <p>Upload your before photo</p>
+        <input type="file" name="before"/>
+    <br/>
+    </br>
+        <textarea id="txt" name="before" cols="20" rows="10" placeholder="Add description here"></textarea>
+    </form>
+<br/>
+<br/>
+<br/>
+<form action="http://someserver.com/service.php" method="post" name="then">
+    <p>Upload your after photo</p>
+    <input type="file" name="after"/>
+<br/>
+</br>
+    <textarea id="txt" name="after" cols="20" rows="10" placeholder="Add description here"></textarea>
+</form>
+<br/>
+<br/>
+<form action="./handle.upload.html">
+<input type="submit" name="send" value="Send"/>
+</form>
+</body>
+</html>

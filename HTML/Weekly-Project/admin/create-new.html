@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Wanted Poster</title>
+</head>
+<body>
+    <form action="http://www.imaginaryserver/index.php" method="post" name="new-wanted-poster">
+    <table width="60%" align="center">
+        <tr>
+            <td>
+                <a href="../posters/index.html">Back to homepage</a>
+            </td>
+        </tr>
+        <tr height="10"></tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Top headline</legend>
+                    <label for="headline">Headline text:</label>
+                    <input type="text"/>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                        <legend>Images</legend>
+                        <label for="image">Image 1:</label>
+                        <input type="file"/>
+                    <br/>
+                        <label for="image">Image 2:</label>
+                        <input type="file"/>
+                    <br/>
+                        <label for="image">Image 3:</label>
+                        <input type="file"/>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                        <legend>Reward</legend>
+                        <label for="reward">Reward money:</label>
+                        <input type="text" name="reward" placeholder="$"/>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                        <legend>Reward</legend>
+                        <label for="alias">Aliases:</label>
+                    <br/>
+                        <input type="text" name="names"/>
+                    <br/>
+                    <br/>
+                        <label for="birthdate">Birth:</label>
+                    <br/>
+                        <input type="date" name="birthday"/>
+                    <br/>
+                    <br/>
+                        <label for="haircolour">Hair:</label>
+                    <br/>
+                        <select name="hair">
+                            <option value="blond">Blonde</option>
+                            <option value="brown">Brown</option>
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                        </select>
+                    <br/>
+                    <br/>
+                        <label for="eyecolour">Eyes:</label>
+                    <br/>
+                        <input type="checkbox" name="eyes" value="blue"/>Blue
+                        <input type="checkbox" name="eyes" value="green"/>Green
+                        <input type="checkbox" name="eyes" value="brown"/>Brown
+                    <br/>
+                    <br/>
+                        <label for="height">Height:</label>
+                    <br/>
+                        <input type="text" name="height" maxlength="5" placeholder="cm"/>
+                    <br/>
+                    <br/>
+                        <label for="weight">Weight:</label>
+                    <br/>
+                        <input type="text" name="weight" maxlength="5" placeholder="kg"/>
+                    <br/>
+                    <br/>
+                        <label for="gender">Sex:</label>
+                    <br/>
+                        <input type="radio" name="gender" value="male"/> Male
+                        <input type="radio" name="gender" value="female"/> Female
+                    <br/>
+                    <br/>
+                        <label for="id">ID number:</label>
+                    <br/>
+                        <input type="text" name="id" maxlength="10"/>
+                    <br/>
+                    <br/>
+                        <label for="job">Occupation:</label>
+                    <br/>
+                        <input type="text" name="occupation"/>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Remarks</legend>
+                    <textarea placeholder="Remarks text" rows="7" cols="115"></textarea>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Caution</legend>
+                    <textarea placeholder="Caution text" rows="7" cols="115"></textarea>
+                </fieldset>
+            </td>
+        </tr>
+        <tr height="30"></tr>
+        <tr>
+            <td>
+                <button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ObMg27Z6ZxR_szE4dxWv_dFVf3IERRa7gA&usqp=CAU" alt="reset" width="10" height="10"/> Reset
+                </button>
+                <button>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKioKbQ8rEzN9cJzC2ApKqOSJ7pGp_xSiyyg&usqp=CAU" alt="submit" width="10" height="10"/> Create Poster
+                </button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

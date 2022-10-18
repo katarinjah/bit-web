@@ -1,0 +1,82 @@
+
+/* -----------Layout---------- */
+
+body {
+    margin: 5;
+    padding: 10;
+    font-family: Verdana, sans-serif;
+    background-color: #E3CF57;
+}
+
+.container {
+    width: 1050px;
+    margin-left: 20px;
+    border-top: 5px dashed red;
+    border-bottom: 5px dotted red;
+    background: #00B2EE;
+}
+
+/* --------Hedings------- */
+
+h1 {
+    padding-right: 20px 0;
+    text-align: right;
+    background: #27408B;
+    color: orange;
+}
+
+h2 {
+    font-family: 'Book Antiqua', serif;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #27408B;
+    color: orange;
+}
+
+.title {
+    background-color: #9370DB;
+
+}
+
+/* --------Content-------- */
+
+img {
+    height: 500px;
+    margin: 20px auto 20px;
+    display: inline;
+}
+
+table {
+    width: 80%;
+    color: rgb(255,255,0);
+    background: #FF7F24;
+    border-collapse: separate;
+    font-family: Perpetua, serif;
+}
+
+tr {
+    border-top: 5px groove rgb(128,0,128);
+}
+
+
+td {
+    padding-right: 20px 0;
+}
+
+.even {
+    background-color:#CDC0B0;
+}
+
+
+td:first-child {
+    width: 500px;
+    padding-top: 20px;
+}
+
+p#footer {
+    margin-left: 80px;
+    color: green;
+    border-left: 10px ridge purple;
+    padding-left: 30px;
+}

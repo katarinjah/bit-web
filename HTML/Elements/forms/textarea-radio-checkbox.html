@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Quiz</title>
+</head>
+<body>
+    <h1>School Quiz</h1>
+    <form action="http://someserver.com/service.php" method="get" name="quiz">
+        <label for="question">1. First question</label>
+        <br/>
+        <br/>
+        <input type="radio" name="questions" value="First answer"/>First answer
+        <input type="radio" name="questions" value="Second answer"/>Second answer
+        <input type="radio" name="questions" value="Third answer"/>Third answer
+        </form>
+        <br/>
+        <br/>
+        <form action="http://someserver.com/service.php" method="get" name="quiz">
+       <label for="question">2. Second question</label>
+        <br/>
+        <br/>
+        <select multiple name="options">
+<option value="1">1st answer</option>
+<option value="2">2nd answer</option>
+<option value="3">3rd answer</option>
+</select>
+    </form>
+    <br/>
+    <br/>
+    <form action="http://someserver.com/service.php" method="get" name="quiz">
+<label for="question">3. Write some text</label>
+<br/>
+<br/>
+<textarea id="txt" name="textarea" cols="20" rows="10" placeholder="Insert long text here"></textarea>
+    </form>
+    <br/>
+    <br/>
+    <form action="http://someserver.com/service.php" method="get" name="submit">
+        <input type="submit" name="Submit"/>
+    </form>
+</body>
+</html>
