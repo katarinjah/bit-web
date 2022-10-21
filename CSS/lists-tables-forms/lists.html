@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        ul:first-of-type {
+            list-style-type: circle;
+        }
+        ol:first-of-type {
+           list-style-type: upper-alpha;
+        }
+        #second-unordered {
+            list-style-type: square;
+        }
+        ol:last-of-type {
+            list-style-type: upper-roman;
+        }
+        .longlist {
+            width:200px;
+            list-style-image: url(https://img.icons8.com/small/2x/venn-diagram.png);
+        }
+        #inner {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>phone</li>
+    <li>glasses</li>
+    <li>zipper</li>
+    <li>lamp</li>
+    <li>thread</li>
+   </ul> 
+   <ul id="second-unordered">
+    <li>blouse</li>
+    <li>blanket</li>
+    <li>sharpie</li>
+    <li>book</li>
+    <li>shirt</li>
+   </ul> 
+   <ol>
+    <li>wallet</li>
+    <li>bracelet</li>
+    <li>camera</li>
+    <li>puddle</li>
+    <li>door</li>
+   </ol>
+   <ol>
+    <li>tire swing</li>
+    <li>sun glasses</li>
+    <li>hanger</li>
+    <li>speakers</li>
+    <li>sofa</li>
+   </ol>
+   <ul class="longlist">
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Donec et neque vehicula, auctor ex et, aliquet tortor.</li>
+    <li>Quisque gravida sapien at ligula consectetur elementum.</li>
+   </ul> 
+   <ul class="longlist" id="inner">
+    <li>Suspendisse pretium ante ut nulla tincidunt, eu blandit sapien condimentum.</li>
+    <li>Pellentesque accumsan nisi quis eros vulputate, non auctor lectus imperdiet.</li>
+    <li>Nullam et mauris euismod, tincidunt sapien eget, tincidunt neque.</li>
+   </ul> 
+</body>
+</html>
