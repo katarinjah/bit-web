@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | Cursor</title>
+    <link rel="stylesheet" href="./normalize.css"/>
+    <style>
+        table {
+            margin: auto;
+            width: 400px;
+            height: 600px;
+            background-color: lightgrey;
+            opacity: 0.75;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            border-radius: 25px 0px;
+        }
+        #button {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 40px;
+            width: 300px;
+            cursor: url("https://www.flaticon.com/free-icons/media-encoder"), pointer;
+        }
+        td {
+            text-align: center;
+        }
+        input {
+            width: 300px;
+            height: 25px;
+            box-shadow: 1px 1px 2px 0.5px #888888;
+            border-style: groove;
+            border-color: grey;
+            border-radius: 5px;
+            action: hover;
+            cursor: grabbing;
+        }
+        hr {
+            width: 300px;
+            margin: auto;
+        }
+        .forms {
+            text-align: left;
+            padding-left: 45px;
+        }
+        label {
+            float: left;
+            opacity: 0.75;
+        }
+        div .title {
+            font-weight: bold;
+            text-align: center;
+            height: 25px;
+            width: 50px;
+        }
+        #form {
+            color: darkslategray;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        #get {
+            color: darkgoldenrod;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td height="20px"></td>
+        </tr>
+        <tr>
+            <div class="title">
+                <td height="30px"><span id="form">Form</span><span id="get">Get</span></td>
+            </div>
+        </tr>
+        <tr>
+            <td>
+                <hr/>
+            </td>
+        </tr>
+        <tr>
+            <td class="forms">
+                <form action="https://imaginaryserver.com/index.php" method="post" name="form1">
+                <label for="fullname">Full Name</label><br>
+                <input type="text" name="name" placeholder="Full Name"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="forms">
+                <form action="https://imaginaryserver.com/index.php" method="post" name="form2">
+                <label for="mail">Email</label><br>
+                <input type="email" name="mail" placeholder="Email"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="forms">
+                <form action="https://imaginaryserver.com/index.php" method="post" name="form3">
+                    <label for="number">Contact Number</label><br>
+                <input type="text" name="contactnr" placeholder="Contact Number"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td class="forms">
+                <form action="https://imaginaryserver.com/index.php" method="post" name="form4">
+                <label for="address">Address</label><br>
+                <input type="text" name="address" placeholder="Address"/>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="https://imaginaryserver.com/index.php" method="post" name="form5">
+                <button id="button">Submit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
