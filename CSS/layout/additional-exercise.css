@@ -1,0 +1,51 @@
+
+.container {
+    width: 60vw;
+    height: 20vh;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    list-style: none;
+    background-color: darkgoldenrod;
+    width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+  }
+
+  #home {
+    background-color: grey;
+    padding: 5px;
+  }
+  
+  .main li {
+    padding: 5px 10px;
+  }
+  
+  .main > li:nth-child(3) {
+    position: relative;
+    background-color: grey;
+  }
+  
+  .submenu {
+    list-style: none;
+    position: absolute;
+    width: 170px;
+    top: 27px;
+    left: -40px;
+  }
+  
+  .subitem {
+    background-color: lightgrey;
+  }
+  
+  .subitem:nth-of-type(even) {
+    background-color: grey;
+  }
