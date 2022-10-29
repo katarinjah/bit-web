@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | 2nd exercise</title>
+    <style>
+        .container {
+            width: 60vw;
+            height: 20vh;
+            display: flex;
+            background-color: lightgray;
+            position: relative;
+        }
+        .item1 {
+            background-color: pink;
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .item2 {
+            background-color: paleturquoise;
+            flex-grow: 1;
+        }
+        .item3 {
+            background-color: lightgreen;
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+        .items {
+            height: 10vh;
+            position: relative;
+            top: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">CSS</div>
+        <div class="items item2">is</div>
+        <div class="items item3">awesome</div>
+    </div>
+</body>
+</html>
