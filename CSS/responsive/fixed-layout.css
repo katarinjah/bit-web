@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: inline-row;
+    margin-top: 50px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 15px;
+    position: relative;
+}
+
+header {
+    display: inline-block;
+    margin-left: 30px; 
+}
+
+article {
+    padding: 10px;
+    display: inline-block;  
+}
+
+.first {
+    border-right: 2px solid black;
+}
+
+.subtitle {
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.second, .third {
+    padding-left: 30px;
+    flex-direction: column;
+}
