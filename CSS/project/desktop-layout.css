@@ -1,0 +1,13 @@
+.firstbox {
+    background-image: url(./images/banner3.jpg);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+}
+
