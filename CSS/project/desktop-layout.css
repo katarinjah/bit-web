@@ -26,18 +26,18 @@
 
 body {
     font-family: "RobotoRegular", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1;
     width: 100%;
 }
 
 .container {
-    max-width: 950px;
+    max-width: 60%;
     margin: 0 auto;
 }
 
 .third-box {
-    max-width: 1400px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -181,7 +181,6 @@ nav ul li a {
 }
 
 .second-box img {
-    max-width: 300px;
     width: 100%;
 }
 
@@ -383,3 +382,148 @@ footer ul li {
 footer ul li a {
     color: white;
 }
+
+@media all and (max-width: 768px) {
+    
+    .first-box, .third-box {
+        width: 700px;
+    }
+
+    .second-box {
+        flex-wrap: wrap;
+    }
+
+    header {
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .article {
+        height: 50vh;
+    }
+
+    .article h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin: 21px auto 40px auto;
+        width: 31rem;
+    }
+
+    .subtitle::before, .subtitle::after {
+        width: 7rem;
+    }
+
+    .items {
+        flex: 33%;
+    }
+
+    .bottoms {
+        flex-wrap: wrap;
+    }
+
+    .bottom {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .review {
+        flex-basis: 45%;
+    }
+
+    .bottom {
+        flex: 43%;
+    }
+
+    form input {
+        width: 33%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    .first-box, .third-box {
+        width: 400px;
+    }
+
+    header {
+        background: none;
+        height: 80vh;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        color: gray;
+        margin-bottom: 30px;
+    }
+
+    .logo span {
+        border: 4px solid gray;
+        border-right: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background: #82c3f5;
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-weight: 600;
+    }
+
+    .article {
+        background: url(./images/banner3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: inherit;
+    }
+
+    .article .text h1 {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        width: 21rem;
+    }
+
+    .subtitle::before {
+        left: 12rem;
+    }
+
+    .subtitle::after {
+        right: 12rem;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    footer ul li a {
+        font-size: 0.7rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+    
+  }
