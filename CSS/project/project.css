@@ -69,7 +69,7 @@ nav {
     color: #ff9801;;
     border: 3px solid #fff;
     border-right: none;
-    padding: 5px;
+    padding: 2px 0 2px 5px;
 }
 
 a {
@@ -86,7 +86,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
     text-transform: uppercase;
 }
 
@@ -184,6 +184,18 @@ nav ul li a {
     width: 100%;
 }
 
+.items {
+    padding: 0 20px 0 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(300px, auto);
+    height: 100%;
+}
+
 .items h4 {
     color: #7fc2f7;
     font-size: 1.4rem;
@@ -204,7 +216,6 @@ nav ul li a {
     padding: 10px 0;
     color: gray;
     font-size: 0.9rem;
-
 }
 
 .items ul li i {
@@ -386,11 +397,19 @@ footer ul li a {
 @media all and (max-width: 768px) {
     
     .first-box, .third-box {
-        width: 700px;
+        width: 750px;
     }
 
     .second-box {
+        display: flex;
         flex-wrap: wrap;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .items {
+        flex: 45%;
     }
 
     header {
@@ -412,12 +431,12 @@ footer ul li a {
         width: 31rem;
     }
 
-    .subtitle::before, .subtitle::after {
-        width: 7rem;
+    .subtitle h2 {
+        text-align: center;
     }
 
-    .items {
-        flex: 33%;
+    .subtitle::before, .subtitle::after {
+        width: 7rem;
     }
 
     .bottoms {
@@ -425,8 +444,13 @@ footer ul li a {
     }
 
     .bottom {
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex: 40%;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .review {
@@ -438,7 +462,7 @@ footer ul li a {
     }
 
     form input {
-        width: 33%;
+        width: 100%;
     }
 
     textarea {
@@ -449,12 +473,21 @@ footer ul li a {
 @media all and (max-width: 480px) {
 
     .first-box, .third-box {
-        width: 400px;
+        width: 450px;
+    }
+
+    .second-box {
+        display: flex;
+        flex-direction: column;
     }
 
     header {
         background: none;
         height: 80vh;
+    }
+
+    .subtitle h2 {
+        text-align: center;
     }
 
     nav {
@@ -468,7 +501,7 @@ footer ul li a {
     }
 
     .logo span {
-        border: 4px solid gray;
+        border: 3px solid gray;
         border-right: none;
     }
 
@@ -510,6 +543,15 @@ footer ul li a {
         right: 12rem;
     }
 
+    .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+    }
     .card {
         flex-basis: 100%;
     }
@@ -526,4 +568,4 @@ footer ul li a {
         font-size: 0.8rem;
     }
     
-  }
+}
