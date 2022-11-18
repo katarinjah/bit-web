@@ -1,0 +1,34 @@
+$title-color: green;
+$background1: #BDBDBD;
+$background2: #607D8B;
+$background3: #757575;
+$main-title: #00ff00;
+$even-color: red;
+$table-width: 80%;
+$pic-width: 30%;
+
+.title {
+    color: $title-color;
+}
+
+table {
+    background-color: $background1;
+    width: $table-width;
+    td {
+        background-color: $background2;
+    }
+    .even {
+        color: $even-color;
+    }
+}
+
+.container {
+    background-color: $background3;
+    h1 {
+        color: $main-title;
+    }
+}
+
+img {
+    width: $pic-width;
+}

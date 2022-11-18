@@ -1,0 +1,15 @@
+p:first-of-type, p:nth-child(2n), p:last-of-type {
+  border: 2px solid red;
+  color: limegreen;
+  width: 60%; }
+
+p:nth-child(2n), p:last-of-type {
+  border: 2px solid blue;
+  padding: 10px;
+  width: 25%; }
+
+p:last-of-type {
+  border: 2px solid green;
+  width: 45%; }
+
+/*# sourceMappingURL=inheritance-and-operators.css.map */

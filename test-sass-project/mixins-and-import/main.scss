@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+
+
+header {
+    p {
+        @include text-shadow ($shadow1);
+    }
+}
+
+footer {
+    h3 {
+        border: 1px solid black;
+        @include box-shadow ($shadow2);
+    }
+}
