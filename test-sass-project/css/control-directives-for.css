@@ -1,0 +1,13 @@
+p:first-of-type {
+  font-size: 16px; }
+
+p:nth-child(2n + 2) {
+  font-size: 18px; }
+
+p:nth-child(2n + 3) {
+  font-size: 18px; }
+
+p:nth-child(2n + 4) {
+  font-size: 18px; }
+
+/*# sourceMappingURL=control-directives-@for.css.map */

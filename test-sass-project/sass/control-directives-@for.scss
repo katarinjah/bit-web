@@ -1,0 +1,9 @@
+p:first-of-type {
+    font-size: 16px;
+}
+
+@for $i from 2 through 4 {
+    p:nth-child(2n + #{$i}) {
+      font-size: 16px + 2px;
+    }
+  }

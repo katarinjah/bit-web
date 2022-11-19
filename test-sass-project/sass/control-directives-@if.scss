@@ -1,0 +1,34 @@
+$i: 1;
+
+@mixin background-color($i) {
+        @if $i==1 {
+            background-color: aquamarine;
+        }
+        @else if $i==2 {
+            background-color: pink;
+        }
+        @else if $i==3 {
+            background-color: yellowgreen;
+        }
+        @else if $i==4 {
+            background-color: lavender;
+        }
+}
+
+
+p:first-of-type {
+    @include background-color(1);
+}
+
+p:nth-child(2) {
+    @include background-color(2);
+}
+
+p:nth-child(3) {
+    @include background-color(3);
+}
+
+p:nth-child(4) {
+    @include background-color(4);
+}
+

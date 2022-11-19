@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACZ,SAAS,EAAE,IAAI;;AAIf,mBAAwB;EACtB,SAAS,EAAE,IAAU;;AADvB,mBAAwB;EACtB,SAAS,EAAE,IAAU;;AADvB,mBAAwB;EACtB,SAAS,EAAE,IAAU",
+"sources": ["../sass/control-directives-@for.scss"],
+"names": [],
+"file": "control-directives-@for.css"
+}

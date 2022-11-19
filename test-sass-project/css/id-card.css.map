@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AASA,MAAO;EACH,KAAK,EAVK,KAAK;;AAanB,KAAM;EACF,gBAAgB,EAbN,OAAO;EAcjB,KAAK,EATK,GAAG;EAUb,QAAG;IACC,gBAAgB,EAfV,OAAO;EAiBjB,WAAM;IACF,KAAK,EAfA,GAAG;;AAmBhB,UAAW;EACP,gBAAgB,EAtBN,OAAO;EAuBjB,aAAG;IACC,KAAK,EAvBA,OAAO;;AA2BpB,GAAI;EACA,KAAK,EAzBG,GAAG",
-"sources": ["main.scss"],
+"sources": ["../sass/id-card.scss"],
 "names": [],
-"file": "main.css"
+"file": "id-card.css"
 }
