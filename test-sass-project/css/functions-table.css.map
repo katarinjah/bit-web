@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACV,MAAM,EAAE,eAAe;;AAQ3B,EAAG;EACC,KAAK,EALS,KAAiB;EAM/B,MAAM,EANQ,KAAiB",
+"sources": ["../sass/functions-table.scss"],
+"names": [],
+"file": "functions-table.css"
+}
