@@ -1,0 +1,19 @@
+@function paragraphSize($width) {
+  $size: 1;
+  $padding: 10px;
+  $border: 2px;
+  @if (p:first-of-type) {
+    $size: $width - ($padding + $border);
+  } @else if (p:last-of-type) {
+    $size: $width;
+  }
+  @return $size;
+}
+
+p {
+  width: paragraphSize(300px);
+  padding: 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: blueviolet;
+}
