@@ -1,0 +1,16 @@
+.row-1 {
+    background-color: aquamarine;
+}
+
+.row-2 {
+    background-color: lavender;
+}
+
+.row-3 {
+    background-color: lightskyblue;
+}
+
+.box {
+    border: 1px solid grey;
+    background-color: beige;
+}

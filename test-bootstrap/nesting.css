@@ -1,0 +1,16 @@
+.box {
+    border: 1px solid grey;
+    background-color: beige;
+}
+
+.bigbox {
+    height: 150px;
+}
+
+.mediumbox {
+    height: 40px;
+}
+
+.lastbox {
+    height: 100px;
+}
