@@ -6,9 +6,9 @@ var conversation = function() {
     if (window.confirm("We will submit this answer now!")) {
         window.alert("You have successfully visited the page.");
     }
-} ();
+};
 
-console.log(conversation);
+conversation();
 
 
 
