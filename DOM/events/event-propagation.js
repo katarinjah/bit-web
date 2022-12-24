@@ -10,10 +10,12 @@ var imgNodes = document.querySelectorAll("img");
 
 imgNodes.forEach(item => {
     item.addEventListener('click', event => {
-        item.classList.add("border");
+        if (item.offsetWidth === 300) {
+            event.stopPropagation();
+            item.classList.add("border");
+        }
     })
 })
-
   
 
             

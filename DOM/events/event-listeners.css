@@ -1,0 +1,12 @@
+.container {
+    background-image: url(./field.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1188px;
+    height: 744px;
+    margin: 0 auto;
+}
+
+.player {
+    width: 120px;
+}
