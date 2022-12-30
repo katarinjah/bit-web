@@ -1,6 +1,18 @@
-.container {
+#mario, #running-mario {
+    position: absolute;
+    left: 600px;
+    bottom: 162px;
+}
+
+#running-mario {
+    display: none;
+}
+
+body {
     background-image: url(./bg.jpg);
     background-repeat: no-repeat;
-    width: 80vw;
-    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    height: 84vh;
+    margin: 0 auto;
 }
