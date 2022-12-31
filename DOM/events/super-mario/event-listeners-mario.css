@@ -1,18 +1,27 @@
-#mario, #running-mario {
-    position: absolute;
-    left: 600px;
-    bottom: 162px;
+#mario {
+    background-image: url(./mario.png);
 }
 
 #running-mario {
+    background-image: url(./mario_running.gif);
     display: none;
 }
 
-body {
-    background-image: url(./bg.jpg);
-    background-repeat: no-repeat;
+#mario, #running-mario {
+    height: 150px;
+    width: 120px;
+    position: absolute;
+    left: 650px;
+    bottom: 150px;
     background-size: cover;
-    background-position: center;
-    height: 84vh;
-    margin: 0 auto;
+    background-repeat: no-repeat;
 }
+
+.container {
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 95vh;
+}
+
+
