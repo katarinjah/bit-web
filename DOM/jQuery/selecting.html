@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting</title>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous" ></script>
+  <script>
+   $(function() {
+    console.log("Hello, world!");
+
+    $("li:first").css("border-bottom", "2px solid black");
+
+    $("li").text(function(index, currentText) {
+      return currentText.toUpperCase();
+    });
+
+    $("li:last").addClass("active");
+    $("li.active").css("color", "#F22613");
+
+    var middleIndex = Math.floor($("li").length / 2);
+    $("li").eq(middleIndex).css("background-color", "#FFB61E");
+
+
+  })
+  </script>
+</body>
+</html>
