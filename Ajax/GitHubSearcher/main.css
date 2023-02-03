@@ -1,71 +1,49 @@
-body {
-    overflow-x: hidden;
-}
-
-.container {
-    width: 100vw;
-    margin: 0 auto;
-}
-
-.nav {
-    display: flex;
-    width: 80%;
-    margin: 20px auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.container-fluid {
+    margin-top: 30px;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
-    margin-top: 15x;
 }
 
-.user-container {
-     width: 30%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    background-color: rgba(218, 216, 214, 0.493);
-}
-
-.user-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background-size: cover;
-    margin-right: 20px;
-}
-
-input {
-    width: 450px;
-    margin-top: 20px;
-    padding: 10px 20px 10px 15px;
-    border: 2px solid #BDC3C7;
-    border-radius: 15px;
-    font-size: 17px;
-}
-
-.gallery {
-    width: 80%;
-    margin: 40px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.repo-item {
+.col-sm.user {
     width: 30%;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: rgba(218, 216, 214, 0.493);
 }
+
+#search-input {
+    width: 450px;
+    padding: 10px 20px 10px 15px;
+    border: 2px solid #BDC3C7;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.user-list {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
   
-.repo-avatar {
-    width: 100%;
+.repo-image {
+    width: 20%;
     height: 200px;
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+.repo-image-placeholder {
+    background-image: url(./github-mark-white.png);
+}
+
+.user-image {
+    width: 200px;
+    height: 200px;
 }

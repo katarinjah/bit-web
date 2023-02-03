@@ -1,58 +1,50 @@
-"use strict";
+$(document).ready(function() {
+  
+  $("#search-input").on("keypress", function(e) {
+    if (e.which === 13) {
+      var query = $(this).val();
+      $.ajax({
+        url: "https://api.github.com/search/users?q=" + query,
+        success: function(data) {
+          $(".user-list").remove();
+          var users = data.items.slice(0, 12);
+          for (var i = 0; i < 4; i++) {
+            var row = $("<div class='row user-list'></div>");
+            for (var j = 0; j < 3; j++) {
+              var index = i * 3 + j;
+              var user = users[index];
+              if (!user) break;
+              var col = $("<div class='col-sm d-flex justify-content-center user'></div>");
+              var image = $("<img src='" + user.avatar_url + "' class='user-image ' />");
+              var username = $("<p class='username'>" + user.login + "</p>");
+              col.append(image).append(username);
+              row.append(col);
+            }
+            $(".container-fluid").append(row);
+          }
+        }
+      });
+    }
+  });
 
-//var $searchField = $("#search-input");
-//var $container = $(".container");
-//var $gallery = $(".gallery");
-//var $users = [];
-
-$("#search-input").on("keypress", function(e) {
-  if (e.which === 13) {
-    searchUsers();
-  }
+  $(document).on("click", ".user", function() {
+    var username = $(this).find(".username").text();
+    $.ajax({
+      url: "https://api.github.com/users/" + username + "/repos",
+      success: function(repos) {
+        $(".user-list").remove();
+        for (var i = 0; i < repos.length; i++) {
+          var repo = repos[i];
+          var row = $("<div class='row repo'></div>");
+          var image = repo.owner.avatar_url ? "<img src='" + repo.owner.avatar_url + "' class='repo-image' />" : "<img src='./github-mark-white.png' class='repo-image' />";
+          var name = "<p class='repo-name'>" + repo.name + "</p>";
+          var description = "<p class='repo-description'>" + repo.description + "</p>";
+          var stars = "<p class='repo-stars'>" + repo.stargazers_count + " stars</p>";
+          var language = "<p class='repo-language'>" + repo.language + "</p>";
+          row.append("<div class='col-sm'>" + image + name + description + stars + language + "</div>");
+          $(".container-fluid").append(row);
+        }
+      }
+    });
+  });
 });
-function searchUsers() {
-  var query = $("#search-input").val();
-  $.ajax({
-    url: "https://api.github.com/search/users?q=" + query,
-    success: function(data) {
-      $("#user-list").empty();
-      data.items.forEach(function(item) {
-        var userContainer = $("<div class='user-container'></div>");
-        var userAvatar = $("<div class='user-avatar'></div>");
-        userAvatar.css("background-image", "url(" + item.avatar_url + ")");
-        userContainer.append(userAvatar);
-        userContainer.append("<div>" + item.login + "</div>");
-        userContainer.data("repos_url", item.repos_url);
-        userContainer.click(function() {
-          $("#user-list").hide();
-          $("#repo-list").show();
-          searchRepos($(this).data("repos_url"));
-        });
-        $("#user-list").append(userContainer);
-      });
-    }
-  });
-}
-
-function searchRepos(reposUrl) {
-  $.ajax({
-    url: reposUrl,
-    success: function(data) {
-      $("#user-list").empty();
-      var repoContainer = $("<div class='repo-container'></div>");
-      data.forEach(function(repo) {
-        var repoItem = $("<div class='repo-item'></div>");
-        var repoAvatar = $("<div class='repo-avatar'></div>");
-        repoAvatar.css("background-image", repo.owner.avatar_url ? "url(" + repo.owner.avatar_url + ")" : "none");
-        repoItem.append(repoAvatar);
-        repoItem.append("<div>" + repo.name + "</div>");
-        repoItem.append("<div>" + repo.description + "</div>");
-        repoItem.append("<div>Stars: " + repo.stargazers_count + "</div>");
-        repoItem.append("<div>Languages: " + repo.language + "</div>");
-        repoContainer.append(repoItem);
-      });
-      $("#user-list").append(repoContainer);
-    }
-  });
-}
-
